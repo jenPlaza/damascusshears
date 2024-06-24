@@ -223,6 +223,9 @@ article h3 {
   position: relative;
   border: 1px solid transparent;
 }
+#feature .fShears {
+  height: 115px;
+}
 #feature article section {
   padding: 3% 3vw;
   display: flex;
@@ -243,7 +246,6 @@ article h3 {
 }
 #poppingStyle {
   width: 97%;
-  margin-top: 16vh;
 }
 figure {
   height: 300px;
@@ -328,12 +330,14 @@ figure {
   width: 100%;
   padding: 5% 4%;
   color: #fffdfd;
+  position: relative;
 }
 #about > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  position: relative;
 }
 #about h2 {
   filter: drop-shadow(2px 4px 6px black);
@@ -487,6 +491,9 @@ footer .copyright {
     box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
   }
+  #feature div {
+    padding-top: 1%;
+  }
   #feature article section {
     width: 50%;
     height: 100%;
@@ -503,7 +510,7 @@ footer .copyright {
     background-size: cover;
   }
   #poppingStyle {
-    margin: 13vh auto 2% auto;
+    margin: 0 auto 2% auto;
   }
   #poppingStyle h3 {
     left: 1vw;
@@ -680,9 +687,6 @@ footer .copyright {
   #feature article section {
     width: 50%;
   }
-  #poppingStyle {
-    margin-top: 15vh;
-  }
   #poppingStyle,
   #cuttingEdge {
     width: 95%;
@@ -763,9 +767,6 @@ footer .copyright {
   #nex {
     top: 350px;
   }
-  #poppingStyle {
-    margin-top: 19vh;
-  }
   #poppingStyle figure {
     background-position: left 3px top -167px;
     margin: 0;
@@ -814,9 +815,6 @@ footer .copyright {
   }
   #feature article section {
     width: 37%;
-  }
-  #poppingStyle {
-    margin-top: 18vh;
   }
   #poppingStyle h3 {
     left: 23%;
