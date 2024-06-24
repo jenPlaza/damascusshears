@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1.0"
+    />
+    <title>Damascus Shears</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!-- rotator -->
+      <section id="rotator">
+        <img
+          src="./img/rotator/damascusScissos.png"
+          alt="Scissors"
+          width="100%"
+          height="100%"
+        />
+        <!-- Thumbnail Pagination -->
+        <ul class="pagination">
+          <li>
+            <button id="prev">
+              <img src="./img/icons/arrow_left.png" alt="arrow icon" />
+            </button>
+          </li>
+          <li>
+            <button id="nex">
+              <img src="./img/icons/arrow_right.png" alt="arrow icon" />
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section id="home">
+        <!-- logo -->
+        <img src="./img/icons/logo_wht.png" alt="logo" width="100%" height="100%" />
+        <!-- Navigation -->
+          <navigation >
+          <div class="menu">
+            <section id="navList" style="display:none;">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feature">Featured</a></li>
+              </ul>
+            </section>
+            <button type="button" id="menuBtn" onclick="appear();">
+              <span><img src="./img/icons/menu-4.png" alt="menu icon" /></span>
+              <span><p>Menu</p></span>
+            </button>
+        </navigation>
+      </section>
+    </header>
+    <section id="infoBar">
+      <!-- shipping -->
+      <section>
+        <span><img src="img/icons/truck.png" width="25" height="25" /></span>
+        <span
+          ><h3><em>Free Domestic Shipping over $75</em></h3></span
+        >
+      </section>
+      <!-- contact -->
+      <section>
+        <span>
+          <img
+            src="img/icons/1078687_logo_media_phone_social_icon.png"
+            width="25"
+            height="25"
+          />
+        </span>
+        <span
+          ><h3>
+            <em
+              ><a href="tel:1-800-456-7890"
+                >Give us a Call 1-800-456-7890</a
+              ></em
+            >
+          </h3></span
+        >
+      </section>
+      <!-- email -->
+      <section>
+        <span>
+          <img
+            src="img/icons/4550857_email_gmail_mail_sending_yahoo_icon.png"
+            width="25"
+            height="25"
+          />
+        </span>
+        <span
+          ><h3>
+            <em><a href="mailto:nomail@gmail.com">Email us</a></em>
+          </h3></span
+        >
+      </section>
+    </section>
+    <section class="parallex-section">
+      <div class="parallex" id="parallex-set-1"></div>
+    </section>
+    <!-- feature -->
+    <section id="feature">
+      <h2>Featured Shears</h2>
+      <article class="card" id="poppingStyle">
+        <div class="container">
+          <figure>
+            <h3>Popping Style</h3>
+          </figure>
+          <section>
+            <h4>56S00 EOS Blade</h4>
+            <p>
+              Known for its dependable performance and handmade from the most superior grade of steel, these professional shears have custom inside edge work for precision cutting; excellent for straight lines and pristine cuts. Damascus Shears will stay sharp for longer than any other professional hairdressing scissors of its grade. A tool ideal for smoother accurate soft cuts.
+            </p>
+            <h4>$499.00 USD</h4>
+            <button onclick="window.location.href='tel:1-800-456-7890';">
+              Call Now to Order
+            </button>
+          </section>
+        </div>
+      </article>
+      <section id="razorSharp">
+        <div class="card">
+          <h3>Razor Sharp Technology</h3>
+          <p>
+            Damascus steel is highly valued as it is hard and flexible. These shears are specifically designed for accuracy cutting and anatomically balanced, so they can be incredibly sharp and precise. Their razor- sharp durable blades makes them an ideal choice for any job at hand and perfect for just about any cut.
+          </p>
+          <figure></figure>
+        </div>
+      </section>
+      <article class="card" id="cuttingEdge">
+        <div class="container">
+          <figure>
+            <h3>Cutting Edge Blades</h3>
+          </figure>
+          <section>
+            <h4>56SD0 EOS Blade II</h4>
+            <p>
+              These professional handmade Thinner scissors, with high-grade steel and beautiful aesthetics, are an absolute must-have in your tool box. Damascus thinners are intended to thin out large chunks of hair, while saving time and effort on coarse or dense hair. Its flexibility allows for controlled snips through each section, moving gradually to remove bulk and create texture
+            </p>
+            <h4>$879.00 USD</h4>
+            <button onclick="window.location.href='tel:1-800-456-7890';">
+              Call Now to Order
+            </button>
+          </section>
+        </div>
+      </article>
+    </section>
+    <section class="parallex-section">
+      <div class="parallex parallex2 mobile-parallax" id="parallex-set-2"></div>
+    </section>
+    <!-- about -->
+    <section id="about">
+      <div>
+        <h2>About Damascus Shears</h2>
+        <p>
+          Anatomically designed for lightweight comfort and narrower blades, these blades were regarded for their strength, flexibility, and ability to retain a keen edge. These beautiful blades are known for their water-like swirls and waving patterns, that can be recognized immediately by their interchangeable color patterns. However, aside from their beauty they are identified for their high quality cutting.
+        </p>
+      </div>
+    </section>
+    <!-- sticky button -->
+    <button onclick="toTheTop()" class="sticky">Top</button>
+    <!-- footer -->
+    <footer>
+      <section>
+        <img class="logo" src="./img/icons/logo_wht.png" alt="button logo" />
+      </section>
+      <div>
+        <section>
+          <a href="#home"><h5>Home</h5></a>
+          <a href="#about"><h5>About</h5></a>
+          <a href="#feature"><h5>Feature</h5></a>
+        </section>
+        <section>
+          <p>Free Domestic shipping over $75</p>
+        </section>
+        <section>
+          <h4>Contact US</h4>
+          <div>
+            <a href="tel:1-800-456-7890"
+              ><image
+                src="./img/icons/phone-32.png"
+                alt="phone icon"
+                width="25"
+                height="25"
+            /></a>
+            <a href="mailto:nomail@gmial.com"
+              ><image
+                src="./img/icons/mail.png"
+                alt="email icon"
+                width="40"
+                height="40"
+            /></a>
+          </div>
+        </section>
+      </div>
+      <section class="copyright">
+        <p>@2024 Damascus Shears</p>
+      </section>
+    </footer>
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/rotator.js"></script>
+    <script type="text/javascript" src="./js/topBtn.js"></script>
+  </body>
+</html>

@@ -1,0 +1,861 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e4e4e4;
+  overflow-x: hidden;
+  width: 100%;
+  font: normal small-caps normal 16px/1.4 Gurmukhi Mt, Serif;
+  color: #26374e;
+}
+/* ----------header ---------------------*/
+h2 {
+  font: normal small-caps normal 65px/1.4 Anton, sans-serif;
+  color: #fffdfd;
+}
+h3 {
+  font: normal normal normal 34px/1.4 Libre Baskerville, sans-serif;
+  color: #e4e4e4;
+}
+h3 em {
+  font: normal normal normal 18px/1.4 Grantha Sangam MN, sans-serif;
+  color: #fffdfd;
+}
+h4 {
+  font: normal small-caps bolder 16px/1.4 Grantha Sangam MN, sans-serif;
+  color: #26374e;
+}
+h5 {
+  font: normal small-caps normal 12px/1.4 Grantha Sangam MN, sans-serif;
+  color: #fffdfd;
+}
+header,
+#rotator {
+  position: relative;
+  height: 400px;
+}
+#mainImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left 66% top 0px;
+}
+#home {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 2% 0% 0.5%;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 88%;
+  flex-direction: column;
+}
+#home img {
+  width: 35vw;
+  align-self: self-start;
+  height: 15%;
+  margin-left: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu #menuBtn {
+  padding: 9%;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#navList {
+  position: absolute;
+  top: 17%;
+  left: 2%;
+  text-align: start;
+  display: none;
+  list-style-type: none;
+}
+.menu section li,
+#navListli {
+  list-style-type: none;
+}
+
+#home .menu img {
+  width: 60%;
+  top: 2px;
+  position: relative;
+}
+
+.menu span p {
+  font-size: larger;
+  color: white;
+}
+
+navigation {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+navigation a {
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  width: auto;
+  filter: drop-shadow(2px 4px 6px black);
+}
+/* ----------rotator ---------------------*/
+iframe {
+  height: 100%;
+}
+#prev {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  background-color: transparent;
+  height: 5px;
+  width: 100px;
+  border: none;
+}
+#nex {
+  position: absolute;
+  top: 250px;
+  right: 0;
+  background-color: transparent;
+  height: 5px;
+  border: none;
+  width: 100px;
+}
+#prev img,
+#nex img {
+  width: 40%;
+}
+#prev img:hover,
+#nex img:hover {
+  width: 40%;
+  border-radius: 50%;
+  border: 3px solid white;
+  padding: 3%;
+}
+
+/* ----------infoBar ---------------------*/
+#infoBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 8px 3vw;
+  background-color: #26374e;
+  flex-wrap: wrap;
+  margin-top: -2px;
+  position: relative;
+}
+#infoBar section {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 340px;
+}
+#infoBar section span {
+  padding: 0 5px;
+  height: 100%;
+  display: flex;
+}
+#infoBar section span a {
+  text-decoration: none;
+  color: white;
+}
+/* ----------parallex ---------------------*/
+.parallex-section {
+  margin: 0;
+  padding: 0;
+}
+.parallex {
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  z-index: 1;
+  display: block;
+  height: 4vh;
+  width: 100%;
+}
+.parallex2 {
+  height: 175px;
+}
+#parallex-set-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./img/parallex/damascusSteel.jpeg');
+}
+#parallex-set-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./img/parallex/Scissor5.jpeg');
+  background-position: right -14px bottom 369px;
+}
+/* ----------Featured ---------------------*/
+article h3 {
+  filter: drop-shadow(2px 4px 6px black);
+  position: relative;
+  top: 11%;
+}
+.container {
+  transition: transform 0.2s;
+}
+.container:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  margin-left: 3%;
+  height: 622px;
+  position: relative;
+}
+#feature {
+  background-color: #e4e4e4;
+  width: 100%;
+  position: relative;
+  border: 1px solid transparent;
+}
+#feature article section {
+  padding: 3% 3vw;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+#feature h2 {
+  filter: drop-shadow(2px 4px 6px black);
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+  width: 100%;
+  padding: 1%;
+  left: 2vw;
+}
+#poppingStyle {
+  width: 97%;
+  margin-top: 16vh;
+}
+figure {
+  height: 300px;
+  width: 100%;
+}
+#poppingStyle figure {
+  background: url('./img/feature/Grp347.png') no-repeat top center / 100% 100%;
+  background-size: cover;
+}
+#cuttingEdge figure {
+  background: url('./img/feature/Scissor6.png') no-repeat bottom center / 100%
+    280px;
+  background-size: cover;
+}
+#poppingStyle h3 {
+  left: 3vw;
+  position: relative;
+}
+#cuttingEdge {
+  width: 97%;
+  position: relative;
+}
+#cuttingEdge h3 {
+  top: 55%;
+  left: 32.5%;
+  position: relative;
+  width: 65vw;
+  text-align: center;
+  overflow: hidden;
+}
+#poppingStyle p,
+#cuttingEdge p {
+  margin-bottom: 10px;
+}
+/* ----------Razor Sharp ---------------------*/
+.card {
+  margin: 15px 0;
+  cursor: pointer;
+  box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#razorSharp {
+  padding: 0 3% 0 0;
+  background-color: #fffdfd;
+  width: 100%;
+  background-position: right -23px top 18px;
+}
+#razorSharp div {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: none;
+  align-items: center;
+  padding-bottom: 5%;
+  justify-content: end;
+  height: 400px;
+}
+#razorSharp p {
+  margin: -5% 6vw 0% 3vw;
+  text-align: justify;
+  order: 3;
+}
+#razorSharp h3 {
+  position: absolute;
+  left: 2.5vw;
+  top: 10%;
+  color: #26374e;
+  filter: drop-shadow(1px 1px 0px black);
+}
+#razorSharp figure {
+  background: url('./img/feature/grp350.png') no-repeat top center / 100% 100%;
+  height: 250px;
+  width: 360px;
+}
+/* ----------About US ---------------------*/
+#about {
+  background: url('./img/parallex/damascusSteel.jpeg') no-repeat top center /
+    100% 100%;
+  height: 100%;
+  width: 100%;
+  padding: 5% 4%;
+  color: #fffdfd;
+}
+#about > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#about h2 {
+  filter: drop-shadow(2px 4px 6px black);
+  left: -1vw;
+  position: relative;
+}
+#about p {
+  left: -1vw;
+  position: relative;
+}
+/* ----------Sticky button ---------------------*/
+button {
+  background-color: #26374e;
+  color: #fffdfd;
+  height: 45px;
+  font-size: medium;
+  width: 90vw;
+}
+button:hover {
+  background-color: #fffdfd;
+  color: #26374e;
+
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+}
+.sticky {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 10;
+  cursor: pointer;
+  width: 50px;
+  border-radius: 50px;
+  filter: drop-shadow(0 0 6px #364d6d);
+}
+/* ----------footer ---------------------*/
+footer {
+  background-color: #26374e;
+  display: flex;
+  justify-content: space-evenly;
+  height: 120px;
+  flex-wrap: wrap;
+  color: #fffdfd;
+}
+footer > section {
+  width: 100%;
+}
+footer > div {
+  width: 92%;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 1.3;
+  height: 55px;
+}
+footer .logo {
+  width: 20%;
+  margin-left: 2%;
+}
+footer > div a {
+  text-decoration: none;
+}
+footer > div section:nth-of-type(1) {
+  width: 75px;
+}
+footer > div section:nth-of-type(2) {
+  width: auto;
+  margin-left: 5%;
+  font-size: 12px;
+}
+footer > div section:nth-of-type(3) {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+footer > div section:nth-of-type(3) div {
+  display: flex;
+  height: 70%;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+footer > div section:nth-of-type(3) h4 {
+  color: #fffdfd;
+  font-size: medium;
+  height: 20px;
+}
+footer .copyright {
+  width: 100%;
+  font-size: 10px;
+  margin-left: 2%;
+}
+/* ----------min-width: 768px ---------------------*/
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+  header,
+  #rotator {
+    height: 500px;
+  }
+  #home {
+    flex-direction: row;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #home img {
+    width: 23%;
+  }
+  navigation {
+    width: 100%;
+    justify-content: end;
+  }
+  navigation ul {
+    width: 325px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+  }
+  #navList {
+    left: 53.5vw;
+    display: block !important;
+  }
+  .menu #menuBtn {
+    display: none;
+  }
+  #infoBar {
+    padding: 0;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 0 1vw;
+  }
+  #infoBar section {
+    width: auto;
+  }
+  .container {
+    display: flex;
+    margin: auto;
+    align-items: center;
+  }
+  .container:hover {
+    width: 93%;
+    height: 100%;
+    margin: 25px auto;
+    padding: 0 10px;
+    cursor: pointer;
+    box-shadow: 9px 9px 16px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+  }
+  #feature article section {
+    width: 50%;
+    height: 100%;
+    padding-right: 0;
+    text-align: justify;
+  }
+  #feature h2 {
+    left: 1.7vw;
+  }
+  figure {
+    margin: 0;
+    height: 325px;
+    width: -webkit-fill-available;
+    background-size: cover;
+  }
+  #poppingStyle {
+    margin: 13vh auto 2% auto;
+  }
+  #poppingStyle h3 {
+    left: 1vw;
+    top: 7%;
+  }
+  #razorSharp {
+    padding-right: 2.5%;
+    position: relative;
+    align-content: center;
+    justify-items: center;
+    display: grid;
+  }
+  #razorSharp div {
+    position: relative;
+    height: 200px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #razorSharp h3 {
+    width: 62%;
+    left: 2.3vw;
+    top: -5px;
+    position: relative;
+    white-space: nowrap;
+  }
+  #razorSharp figure {
+    align-self: end;
+    order: 3;
+    width: 45%;
+    background-position: unset;
+  }
+  #razorSharp p {
+    order: 2;
+    width: 61%;
+    z-index: 100;
+    height: auto;
+    position: relative;
+    margin: 0;
+    left: 2vw;
+  }
+  #cuttingEdge {
+    margin: 2% auto;
+  }
+  #cuttingEdge h3 {
+    left: 20vw;
+    width: 28vw;
+    top: 15vh;
+  }
+  #cuttingEdge figure {
+    background-position-y: bottom;
+  }
+  button {
+    width: 40vw;
+  }
+  #parallex-set-2 {
+    background-position: right -14px bottom 171px;
+  }
+  .parallex {
+    height: 3vh;
+  }
+  .parallex2 {
+    height: 200px;
+  }
+  .card {
+    box-shadow: none;
+  }
+  #about {
+    height: 250px;
+    padding: 5% 3% 5% 4%;
+  }
+  footer {
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+  }
+  footer > div {
+    width: 91%;
+    margin-left: 7%;
+    align-items: center;
+  }
+  footer .logo {
+    width: 13%;
+  }
+  footer > div section:nth-of-type(2) {
+    text-align: center;
+    margin-left: 0;
+  }
+  footer > div section:nth-of-type(3) {
+    flex-direction: row;
+    width: 176px;
+  }
+  footer > div section:nth-of-type(3) div {
+    width: 45%;
+  }
+  footer .copyright {
+    margin-top: -1%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #home img {
+    width: 18%;
+  }
+  #navList {
+    left: 64vw;
+  }
+  navigation a {
+    text-align: center;
+  }
+  #parallex-set-2 {
+    background-position: right 45px bottom 120px;
+  }
+  .parallex {
+    background-size: auto;
+    height: 5vh;
+  }
+  .parallex2,
+  #about {
+    height: 210px;
+  }
+  .container:hover {
+    width: 93%;
+    margin: 25px auto;
+    padding: 0 20px;
+  }
+  #poppingStyle h3 {
+    left: 9vw;
+    top: 15%;
+  }
+  #cuttingEdge h3 {
+    left: 21vw;
+    top: 15vh;
+    width: 27vw;
+  }
+  #razorSharp div {
+    width: 83%;
+  }
+  #razorSharp figure {
+    width: 44%;
+    background-position: right 9px top 0px;
+  }
+  #about {
+    height: 250px;
+  }
+  footer > div section:nth-of-type(3) div {
+    width: 41%;
+  }
+  footer > div {
+    width: 100%;
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #home img {
+    width: 18%;
+  }
+  #navList {
+    left: 71vw;
+  }
+  #prev,
+  #nex {
+    top: 300px;
+  }
+  #infoBar section {
+    width: auto;
+    margin-top: 0;
+  }
+  .logo {
+    margin-left: 6%;
+  }
+  #feature {
+    padding-bottom: 2%;
+  }
+  #feature article section {
+    width: 50%;
+  }
+  #poppingStyle {
+    margin-top: 15vh;
+  }
+  #poppingStyle,
+  #cuttingEdge {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #poppingStyle h3 {
+    left: 20%;
+    top: 17%;
+  }
+  #cuttingEdge h3 {
+    top: 56%;
+    left: 35%;
+  }
+  #poppingStyle figure {
+    background-position: left 3px top -109px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 4%;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31vw;
+  }
+  #razorSharp div {
+    width: 80%;
+  }
+  #razorSharp h3 {
+    left: 7.2vw;
+    width: 64%;
+  }
+  #razorSharp p {
+    left: 2vw;
+    width: 51%;
+  }
+  #razorSharp figure {
+    height: 100%;
+    width: 30vw;
+  }
+  #parallex-set-2 {
+    background-position: right 45px bottom 140px;
+  }
+  .parallex {
+    height: 3vh;
+  }
+  .parallex2 {
+    height: 210px;
+  }
+  #about {
+    height: 270px;
+    padding: 8% 3% 8% 4%;
+  }
+  footer > div {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -1%;
+  }
+  footer > div section:nth-of-type(3) {
+    width: 200px;
+    height: 45px;
+  }
+  footer .logo {
+    width: 10%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  header,
+  #rotator {
+    height: 600px;
+  }
+  #navList {
+    left: 77vw;
+  }
+  #prev,
+  #nex {
+    top: 350px;
+  }
+  #poppingStyle {
+    margin-top: 19vh;
+  }
+  #poppingStyle figure {
+    background-position: left 3px top -167px;
+    margin: 0;
+  }
+  #cuttingEdge figure {
+    margin: 0;
+    background-position: left 3px bottom -262px;
+  }
+  #cuttingEdge h3 {
+    left: 33%;
+  }
+  #razorSharp {
+    height: 300px;
+  }
+  #razorSharp figure {
+    right: 0%;
+    position: relative;
+    width: 38%;
+    background-size: cover;
+    background-position: right -7px top -94px;
+  }
+  #parallex-set-2 {
+    background-position: right 45px bottom 133px;
+  }
+  .parallex2 {
+    height: 200px;
+  }
+  footer .logo {
+    width: 8%;
+  }
+  footer .copyright {
+    margin-top: -1.5%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  header,
+  #rotator {
+    height: 700px;
+  }
+  #prev,
+  #nex {
+    top: 400px;
+  }
+  #navList {
+    left: 81vw;
+  }
+  #feature article section {
+    width: 37%;
+  }
+  #poppingStyle {
+    margin-top: 18vh;
+  }
+  #poppingStyle h3 {
+    left: 23%;
+  }
+  #cuttingEdge h3 {
+    left: 35%;
+  }
+  #poppingStyle figure {
+    background-position: left 3px top -262px;
+  }
+  #parallex-set-2 {
+    background-position: right 45px bottom 168px;
+  }
+  .parallex2 {
+    height: 250px;
+  }
+  #razorSharp div {
+    align-content: center;
+    width: 69%;
+  }
+  #razorSharp p {
+    width: 27vw;
+    left: 0%;
+  }
+  #razorSharp h3 {
+    left: 4vw;
+    width: 51%;
+  }
+  #razorSharp figure {
+    right: 0%;
+    position: relative;
+    width: 38%;
+    background-size: cover;
+    background-position: right -7px top -94px;
+  }
+  #about {
+    padding: 6% 3% 7% 4%;
+  }
+  footer > div {
+    margin-top: -2%;
+  }
+}
